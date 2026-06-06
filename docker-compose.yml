@@ -1,0 +1,11 @@
+services:
+  fraud-detection:
+    build: .
+    container_name: fraud_detection_container
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - PORT=8501
