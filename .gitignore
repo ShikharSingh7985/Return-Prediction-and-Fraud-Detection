@@ -1,0 +1,23 @@
+# Virtual environment
+venvdet/
+venv/
+.venv/
+ENV/
+
+# Large dataset folder
+data/
+
+# Model binaries (keep folder structure, ignore joblib models)
+models/*.joblib
+
+# Python caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
